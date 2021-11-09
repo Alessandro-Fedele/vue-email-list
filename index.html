@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Email List</title>
+</head>
+
+<body>
+    <div id="root" class="container">
+        <h1> {{title}} </h1>
+        <button @click="emailsGenerator">Genera Email</button>
+        <ul>
+            <li v-for="email in emailsList"> {{email}} </li>
+        </ul>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
